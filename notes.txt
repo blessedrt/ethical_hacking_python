@@ -1,0 +1,13 @@
+ when spoofing dns requests iptables -I OUTPUT -j NFQUEUE --queue-num0
+                            iptables -I INPUT -j NFQUEUE --queue-num0
+                                          for remote machine
+                            iptables -I FORWARD -j NFQUEUE --queue-num0                         
+                                         to flush use:
+                            iptables --flush
+
+when bypassing https:       sslstrip
+                            arpspoofer
+                            iptables -t nat -A PREROUTING -p tcp --destination-port 80 -j REDIRECT --to-port 10000
+
+
+                     
