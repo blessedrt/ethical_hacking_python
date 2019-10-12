@@ -8,6 +8,9 @@
 when bypassing https:       sslstrip
                             arpspoofer
                             iptables -t nat -A PREROUTING -p tcp --destination-port 80 -j REDIRECT --to-port 10000
+                            
+                            https://github.com/r00t-3xp10it/backdoorppt
+                            https://github.com/byt3bl33d3r/SprayingToolkit
 
 
                      
